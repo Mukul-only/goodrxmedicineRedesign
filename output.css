@@ -1214,6 +1214,10 @@ input:checked + .toggle-bg {
   height: 100%;
 }
 
+.min-h-\[11rem\] {
+  min-height: 11rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1294,6 +1298,10 @@ input:checked + .toggle-bg {
 .min-w-max {
   min-width: -moz-max-content;
   min-width: max-content;
+}
+
+.min-w-\[11rem\] {
+  min-width: 11rem;
 }
 
 .max-w-2xl {
@@ -1508,6 +1516,12 @@ input:checked + .toggle-bg {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -1748,6 +1762,14 @@ input:checked + .toggle-bg {
 
 .pt-2 {
   padding-top: 0.5rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .text-center {
@@ -2037,8 +2059,36 @@ input:checked + .toggle-bg {
   height: 8px;
 }
 
+.scrollbar-none {
+  scrollbar-width: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-track-stone-400 {
+  --scrollbar-track: #a8a29e !important;
+}
+
 .scrollbar-thumb-slate-400 {
   --scrollbar-thumb: #94a3b8 !important;
+}
+
+.scrollbar-thumb-stone-400 {
+  --scrollbar-thumb: #a8a29e !important;
+}
+
+.scrollbar-thumb-blue-400 {
+  --scrollbar-thumb: #76A9FA !important;
+}
+
+.scrollbar-thumb-blue-900 {
+  --scrollbar-thumb: #233876 !important;
+}
+
+.scrollbar-thumb-blue-800 {
+  --scrollbar-thumb: #1E429F !important;
 }
 
 .card {
@@ -2048,7 +2098,7 @@ input:checked + .toggle-bg {
 }
 
 #carousel {
-  background-image: url("/assets/5570863.jpg");
+  background-image: url("./assets/5570863.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2062,7 +2112,7 @@ input:checked + .toggle-bg {
   height: 800px;
   z-index: -10;
   content: "";
-  background-image: url("/assets/swiggly-lines.png");
+  background-image: url("./assets/swiggly-lines.png");
   background-repeat: no-repeat;
   background-position: right;
   transform: rotate(45deg);
@@ -2295,6 +2345,10 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 640px) {
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .sm\:h-10 {
     height: 2.5rem;
   }
@@ -2361,6 +2415,10 @@ input:checked + .toggle-bg {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
+  .md\:justify-center {
+    justify-content: center;
+  }
+
   .md\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -2381,6 +2439,71 @@ input:checked + .toggle-bg {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .md\:scrollbar-thin {
+    scrollbar-color: var(--scrollbar-thumb, initial) var(--scrollbar-track, initial);
+  }
+
+  .md\:scrollbar-thin::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track);
+    border-radius: var(--scrollbar-track-radius);
+  }
+
+  .md\:scrollbar-thin::-webkit-scrollbar-track:hover {
+    background-color: var(--scrollbar-track-hover, var(--scrollbar-track));
+  }
+
+  .md\:scrollbar-thin::-webkit-scrollbar-track:active {
+    background-color: var(--scrollbar-track-active, var(--scrollbar-track-hover, var(--scrollbar-track)));
+  }
+
+  .md\:scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: var(--scrollbar-thumb-radius);
+  }
+
+  .md\:scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover, var(--scrollbar-thumb));
+  }
+
+  .md\:scrollbar-thin::-webkit-scrollbar-thumb:active {
+    background-color: var(--scrollbar-thumb-active, var(--scrollbar-thumb-hover, var(--scrollbar-thumb)));
+  }
+
+  .md\:scrollbar-thin::-webkit-scrollbar-corner {
+    background-color: var(--scrollbar-corner);
+    border-radius: var(--scrollbar-corner-radius);
+  }
+
+  .md\:scrollbar-thin::-webkit-scrollbar-corner:hover {
+    background-color: var(--scrollbar-corner-hover, var(--scrollbar-corner));
+  }
+
+  .md\:scrollbar-thin::-webkit-scrollbar-corner:active {
+    background-color: var(--scrollbar-corner-active, var(--scrollbar-corner-hover, var(--scrollbar-corner)));
+  }
+
+  .md\:scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .md\:scrollbar-thin::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+    height: 8px;
+  }
+
+  .md\:scrollbar-thumb-stone-800 {
+    --scrollbar-thumb: #292524 !important;
+  }
+
+  .md\:scrollbar-thumb-gray-800 {
+    --scrollbar-thumb: #1F2937 !important;
+  }
+
+  .md\:scrollbar-thumb-gray-600 {
+    --scrollbar-thumb: #4B5563 !important;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -2396,8 +2519,16 @@ input:checked + .toggle-bg {
     width: 400px;
   }
 
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
   .xl\:flex-row {
     flex-direction: row;
+  }
+
+  .xl\:justify-center {
+    justify-content: center;
   }
 
   .xl\:space-x-8 > :not([hidden]) ~ :not([hidden]) {

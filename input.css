@@ -7,7 +7,7 @@
 }
 
 #carousel {
-  background-image: url("/assets/5570863.jpg");
+  background-image: url("./assets/5570863.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,7 +22,7 @@
 
   z-index: -10;
   content: "";
-  background-image: url("/assets/swiggly-lines.png");
+  background-image: url("./assets/swiggly-lines.png");
   background-repeat: no-repeat;
   background-position: right;
   transform: rotate(45deg);
